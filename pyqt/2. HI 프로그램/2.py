@@ -33,7 +33,7 @@ class MainWindow(QMainWindow):
 # 퀴즈 메시지 박스 표시 및 정답 선택
 #########################################################################
         mb_quiz = QMessageBox()
-        mb_quiz.setText("1+1 ?")
+        mb_quiz.setText("1+1 = ?")
         btn_answer_2 = mb_quiz.addButton("2", QMessageBox.ActionRole)
         btn_answer_3 = mb_quiz.addButton("3", QMessageBox.ActionRole) 
         # mb_quiz.addButton("no role", QMessageBox.NoRole) # no 와 action role이 같이 있을 경우 no role이 왼쪽으로 자동적으로 생성됨
