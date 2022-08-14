@@ -15,8 +15,8 @@ from PySide6.QtGui import (QBrush, QColor, QConicalGradient, QCursor,
     QFont, QFontDatabase, QGradient, QIcon,
     QImage, QKeySequence, QLinearGradient, QPainter,
     QPalette, QPixmap, QRadialGradient, QTransform)
-from PySide6.QtWidgets import (QApplication, QLineEdit, QListView, QMainWindow,
-    QPushButton, QSizePolicy, QWidget)
+from PySide6.QtWidgets import (QApplication, QLineEdit, QListWidget, QListWidgetItem,
+    QMainWindow, QPushButton, QSizePolicy, QWidget)
 
 class Ui_MainWindow(object):
     def setupUi(self, MainWindow):
@@ -25,7 +25,7 @@ class Ui_MainWindow(object):
         MainWindow.resize(345, 413)
         self.centralwidget = QWidget(MainWindow)
         self.centralwidget.setObjectName(u"centralwidget")
-        self.list_chat = QListView(self.centralwidget)
+        self.list_chat = QListWidget(self.centralwidget)
         self.list_chat.setObjectName(u"list_chat")
         self.list_chat.setGeometry(QRect(2, 2, 341, 341))
         self.edit_nickname = QLineEdit(self.centralwidget)

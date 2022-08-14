@@ -14,7 +14,7 @@
    <string>메신저</string>
   </property>
   <widget class="QWidget" name="centralwidget">
-   <widget class="QListView" name="list_chat">
+   <widget class="QListWidget" name="list_chat">
     <property name="geometry">
      <rect>
       <x>2</x>
