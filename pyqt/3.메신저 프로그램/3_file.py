@@ -14,6 +14,8 @@ class MainWindow(QMainWindow):
         
         self.ui.btn_send.clicked.connect(self.send)
         self.ui.edit_text.returnPressed.connect(self.send)
+
+        # 닉네임 랜덤 자동 생성
         nickname = self.random_nickname()
         self.ui.edit_nickname.setText(nickname)
         
