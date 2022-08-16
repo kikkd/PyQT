@@ -152,7 +152,7 @@
      </rect>
     </property>
     <property name="currentIndex">
-     <number>0</number>
+     <number>1</number>
     </property>
     <widget class="QWidget" name="tab">
      <attribute name="title">
@@ -221,6 +221,9 @@
        </property>
        <property name="text">
         <string>에스프레소</string>
+       </property>
+       <property name="checked">
+        <bool>true</bool>
        </property>
       </widget>
       <widget class="QRadioButton" name="radio_americano">
@@ -313,6 +316,9 @@
        <property name="text">
         <string>S</string>
        </property>
+       <property name="checked">
+        <bool>true</bool>
+       </property>
       </widget>
       <widget class="QRadioButton" name="radio_size_m">
        <property name="geometry">
@@ -375,6 +381,9 @@
          <height>22</height>
         </rect>
        </property>
+       <property name="minimum">
+        <number>1</number>
+       </property>
       </widget>
       <widget class="QSlider" name="hs_quantity">
        <property name="geometry">
@@ -384,6 +393,9 @@
          <width>311</width>
          <height>22</height>
         </rect>
+       </property>
+       <property name="minimum">
+        <number>1</number>
        </property>
        <property name="orientation">
         <enum>Qt::Horizontal</enum>
@@ -398,6 +410,9 @@
          <height>160</height>
         </rect>
        </property>
+       <property name="minimum">
+        <number>1</number>
+       </property>
        <property name="orientation">
         <enum>Qt::Vertical</enum>
        </property>
@@ -410,6 +425,9 @@
          <width>91</width>
          <height>91</height>
         </rect>
+       </property>
+       <property name="minimum">
+        <number>1</number>
        </property>
       </widget>
      </widget>
