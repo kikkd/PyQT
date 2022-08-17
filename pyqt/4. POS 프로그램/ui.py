@@ -15,11 +15,11 @@ from PySide6.QtGui import (QBrush, QColor, QConicalGradient, QCursor,
     QFont, QFontDatabase, QGradient, QIcon,
     QImage, QKeySequence, QLinearGradient, QPainter,
     QPalette, QPixmap, QRadialGradient, QTransform)
-from PySide6.QtWidgets import (QApplication, QDial, QGroupBox, QHeaderView,
-    QLCDNumber, QLabel, QMainWindow, QPushButton,
-    QRadioButton, QScrollBar, QSizePolicy, QSlider,
-    QSpinBox, QTabWidget, QTableWidget, QTableWidgetItem,
-    QWidget)
+from PySide6.QtWidgets import (QAbstractItemView, QApplication, QDial, QGroupBox,
+    QHeaderView, QLCDNumber, QLabel, QMainWindow,
+    QPushButton, QRadioButton, QScrollBar, QSizePolicy,
+    QSlider, QSpinBox, QTabWidget, QTableWidget,
+    QTableWidgetItem, QWidget)
 
 class Ui_MainWindow(object):
     def setupUi(self, MainWindow):
@@ -80,7 +80,12 @@ class Ui_MainWindow(object):
         __qtablewidgetitem4 = QTableWidgetItem()
         self.table_orders.setHorizontalHeaderItem(4, __qtablewidgetitem4)
         self.table_orders.setObjectName(u"table_orders")
+        self.table_orders.setEnabled(True)
         self.table_orders.setGeometry(QRect(10, 10, 631, 521))
+        self.table_orders.setEditTriggers(QAbstractItemView.AnyKeyPressed|QAbstractItemView.EditKeyPressed)
+        self.table_orders.setTextElideMode(Qt.ElideRight)
+        self.table_orders.setGridStyle(Qt.DashLine)
+        self.table_orders.setCornerButtonEnabled(True)
         self.tabWidget.addTab(self.tab, "")
         self.tab_2 = QWidget()
         self.tab_2.setObjectName(u"tab_2")
@@ -154,7 +159,7 @@ class Ui_MainWindow(object):
 
         self.retranslateUi(MainWindow)
 
-        self.tabWidget.setCurrentIndex(1)
+        self.tabWidget.setCurrentIndex(0)
 
 
         QMetaObject.connectSlotsByName(MainWindow)
