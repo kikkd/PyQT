@@ -1,11 +1,11 @@
-from socket import timeout
-from xml.sax.xmlreader import Locator
+import datetime
+import sys
+
+#pip install pySide6
 from PySide6.QtWidgets import QMainWindow, QApplication, QMessageBox, QTableWidgetItem
 from PySide6.QtGui import QStandardItemModel, QStandardItem
 from PySide6.QtCore import QTimer
 from ui import Ui_MainWindow
-import datetime
-import sys
 
 # pip install selenium
 from selenium import webdriver
