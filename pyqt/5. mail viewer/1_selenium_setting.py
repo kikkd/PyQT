@@ -1,4 +1,5 @@
 import datetime
+import time
 import sys
 
 #pip install pySide6
@@ -21,7 +22,6 @@ def find(chrome,css):
     wait = WebDriverWait(chrome, 5)
     return wait.until(EC.visibility_of_element_located((By.CSS_SELECTOR,css)))
 
-
 class MainWindow(QMainWindow):
     def __init__(self):
         super(MainWindow, self).__init__()
@@ -31,9 +31,6 @@ class MainWindow(QMainWindow):
     chrome = webdriver.Chrome("./chromedriver.exe")
     # log in
     chrome.get("https://mail.naver.com")
-    input_id = find(chrome,"#id")
-    print(input_id)
-
 
 if __name__ == "__main__":
     app = QApplication()
