@@ -32,7 +32,7 @@ mails = []
 N_ID = " "
 N_PW = " "
 D_ID = " "
-D_PW = " "
+D_PW = " " 
 class MainWindow(QMainWindow):
     def __init__(self):
         super(MainWindow, self).__init__()
