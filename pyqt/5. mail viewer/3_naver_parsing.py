@@ -29,8 +29,8 @@ def find_all(chrome,css):
 mails = []
 # daum_mails = []
 
-ID = "whddls6666"
-PW = "dasom1036!d"
+ID = " "
+PW = " "
 
 class MainWindow(QMainWindow):
     def __init__(self):
