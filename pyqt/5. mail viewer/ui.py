@@ -22,7 +22,7 @@ class Ui_MainWindow(object):
     def setupUi(self, MainWindow):
         if not MainWindow.objectName():
             MainWindow.setObjectName(u"MainWindow")
-        MainWindow.resize(963, 405)
+        MainWindow.resize(1633, 447)
         self.centralwidget = QWidget(MainWindow)
         self.centralwidget.setObjectName(u"centralwidget")
         self.table = QTableWidget(self.centralwidget)
@@ -39,13 +39,13 @@ class Ui_MainWindow(object):
         __qtablewidgetitem4 = QTableWidgetItem()
         self.table.setHorizontalHeaderItem(4, __qtablewidgetitem4)
         self.table.setObjectName(u"table")
-        self.table.setGeometry(QRect(2, 2, 701, 400))
+        self.table.setGeometry(QRect(2, 2, 1221, 400))
         self.lb_title = QLabel(self.centralwidget)
         self.lb_title.setObjectName(u"lb_title")
-        self.lb_title.setGeometry(QRect(710, 10, 48, 16))
+        self.lb_title.setGeometry(QRect(1230, 0, 401, 20))
         self.lb_content = QLabel(self.centralwidget)
         self.lb_content.setObjectName(u"lb_content")
-        self.lb_content.setGeometry(QRect(710, 30, 251, 371))
+        self.lb_content.setGeometry(QRect(1240, 30, 391, 371))
         MainWindow.setCentralWidget(self.centralwidget)
 
         self.retranslateUi(MainWindow)
@@ -58,11 +58,11 @@ class Ui_MainWindow(object):
         ___qtablewidgetitem = self.table.horizontalHeaderItem(0)
         ___qtablewidgetitem.setText(QCoreApplication.translate("MainWindow", u"\ub0a0\uc9dc", None));
         ___qtablewidgetitem1 = self.table.horizontalHeaderItem(1)
-        ___qtablewidgetitem1.setText(QCoreApplication.translate("MainWindow", u"\uc0c8 \ud589", None));
+        ___qtablewidgetitem1.setText(QCoreApplication.translate("MainWindow", u"\uc0ac\uc774\ud2b8", None));
         ___qtablewidgetitem2 = self.table.horizontalHeaderItem(2)
-        ___qtablewidgetitem2.setText(QCoreApplication.translate("MainWindow", u"\uc0ac\uc774\ud2b8", None));
+        ___qtablewidgetitem2.setText(QCoreApplication.translate("MainWindow", u"\ubcf4\ub0b8\uc774", None));
         ___qtablewidgetitem3 = self.table.horizontalHeaderItem(3)
-        ___qtablewidgetitem3.setText(QCoreApplication.translate("MainWindow", u"\ubcf4\ub0b8\uc774", None));
+        ___qtablewidgetitem3.setText(QCoreApplication.translate("MainWindow", u"\ucca8\ubd80\ud30c\uc77c", None));
         ___qtablewidgetitem4 = self.table.horizontalHeaderItem(4)
         ___qtablewidgetitem4.setText(QCoreApplication.translate("MainWindow", u"\uc81c\ubaa9", None));
         self.lb_title.setText(QCoreApplication.translate("MainWindow", u"TextLabel", None))
