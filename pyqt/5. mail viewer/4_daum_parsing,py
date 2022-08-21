@@ -29,10 +29,10 @@ def find_all(chrome,css):
 mails = []
 # daum_mails = []
 
-N_ID = "whddls6666"
-N_PW = "dasom1036!d"
-D_ID = "whddls66@hanmail.net"
-D_PW = "1231036d"
+N_ID = " "
+N_PW = " "
+D_ID = " "
+D_PW = " "
 class MainWindow(QMainWindow):
     def __init__(self):
         super(MainWindow, self).__init__()
@@ -97,7 +97,7 @@ class MainWindow(QMainWindow):
         chrome.get("""https://accounts.kakao.com/login?continue=https%3A%2F%2Flogins.daum.net%2Faccounts%2Fksso.do%3Frescue%3Dtrue%26url%3Dhttps%253A%252F%252Fmail.daum.net%252F""")
         input_did = find(chrome,"div.item_tf input#id_email_2")
         input_dpw = find(chrome,"#id_password_3")
-        pyperclip.copy("whddls66@hanmail.net")
+        pyperclip.copy(D_ID)
         time.sleep(1)
         #input_did.click()
         input_did.send_keys(Keys.ENTER)
